@@ -25,20 +25,6 @@ class ProposalsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /proposals/1
-  def update
-    if @proposal.update(proposal_params)
-      render json: @proposal
-    else
-      render json: @proposal.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /proposals/1
-  def destroy
-    @proposal.destroy
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_proposal
